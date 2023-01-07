@@ -1,10 +1,9 @@
-from transformers import RobertaTokenizer
+from transformers import RobertaTokenizerFast
 
-vocab_file = './tokenizer/vocab.json'
-merges_file = './tokenizer/merges.txt'
-tokenizer = RobertaTokenizer(vocab_file=vocab_file, merges_file=merges_file, lowercase=True, add_prefix_space=True)
+tokenizer = RobertaTokenizerFast.from_pretrained("./tokenizer", max_len=512)
 
-text = "mesa com cadeira 2m"
+text = "lm led tl slim 10 sobrepor autovolt 6500k branca-der/01 branca-7897079061215- cod.fci 4a8bfb1e-b524-4ff0-bf44-366b054ab8"
 
 print(tokenizer.tokenize(text))
+print('lenght: ', len(tokenizer.tokenize(text)))
 print(tokenizer.encode(text))

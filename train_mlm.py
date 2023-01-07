@@ -2,7 +2,7 @@ from transformers import RobertaConfig
 from transformers import RobertaForMaskedLM
 
 config = RobertaConfig(
-    vocab_size=88,
+    vocab_size=1000,
     max_position_embeddings=514,
     num_attention_heads=12,
     num_hidden_layers=6,
@@ -36,7 +36,7 @@ from transformers import Trainer, TrainingArguments
 training_args = TrainingArguments(
     output_dir="./model",
     overwrite_output_dir=True,
-    num_train_epochs=1,
+    num_train_epochs=30,
     per_gpu_train_batch_size=64,
     save_steps=100,
     save_total_limit=2,

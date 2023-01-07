@@ -6,7 +6,7 @@ paths = [f"data/corpus_{split}.txt" for split in ["train", "dev"]]
 tokenizer = ByteLevelBPETokenizer()
 
 # Customize training
-tokenizer.train(files=paths, vocab_size=88, min_frequency=2, special_tokens=[
+tokenizer.train(files=paths, vocab_size=1000, min_frequency=2, special_tokens=[
     "<s>",
     "<pad>",
     "</s>",
