@@ -110,9 +110,6 @@ ENV/
 env.bak/
 venv.bak/
 
-data/
-model/
-bert_prod/
 
 # Spyder project settings
 .spyderproject
