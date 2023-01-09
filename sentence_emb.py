@@ -11,7 +11,7 @@ def mean_pooling(model_output, attention_mask):
 
 # Sentences we want sentence embeddings for
 sentences = ['painel acab linear h25 680mm - ouro bco',
-             'cadeira office avila preta riv']
+             'painel editavel de 25 950 x 530 x 25']
 
 from transformers import RobertaTokenizerFast
 
