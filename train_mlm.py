@@ -2,7 +2,7 @@ from transformers import RobertaConfig
 from transformers import RobertaForMaskedLM
 
 config = RobertaConfig(
-    vocab_size=1000,
+    vocab_size=100,
     max_position_embeddings=514,
     num_attention_heads=12,
     num_hidden_layers=6,
@@ -20,7 +20,7 @@ from transformers import LineByLineTextDataset
 
 dataset = LineByLineTextDataset(
     tokenizer=tokenizer,
-    file_path="./data/corpus_train_2.txt",
+    file_path="./data/corpus_train.txt",
     block_size=128,
 )
 
@@ -36,7 +36,7 @@ from transformers import Trainer, TrainingArguments
 training_args = TrainingArguments(
     output_dir="./model",
     overwrite_output_dir=True,
-    num_train_epochs=30,
+    num_train_epochs=1,
     per_gpu_train_batch_size=64,
     save_steps=100,
     save_total_limit=2,

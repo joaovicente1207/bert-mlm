@@ -1,1 +1,24 @@
 #version: 0.2 - Trained by `huggingface/tokenizers`
+r a
+c a
+i n
+c o
+r e
+a r
+e s
+t a
+0 0
+e i
+c o</w>
+r a</w>
+e n
+a l
+r o
+p o
+a d
+m m</w>
+t o</w>
+l a
+p a
+d e</w>
+m o

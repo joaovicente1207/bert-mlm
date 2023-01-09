@@ -1,9 +1,9 @@
-from tokenizers import ByteLevelBPETokenizer
+from tokenizers import CharBPETokenizer
 
 paths = [f"data/corpus_{split}.txt" for split in ["train", "dev"]]
 
 # Initialize a tokenizer
-tokenizer = ByteLevelBPETokenizer()
+tokenizer = CharBPETokenizer()
 
 # Customize training
 tokenizer.train(files=paths, vocab_size=100, min_frequency=1, special_tokens=[
